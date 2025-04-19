@@ -8,6 +8,7 @@ const Cta = () => {
     <a href="#contact" className="inline-block px-6 py-3 border border-[#e0c27d] text-sm font-medium uppercase tracking-wider hover:bg-[#e0c27d] hover:text-black transition">
       Contact Us
     </a>
+    
   </section>
   )
 }

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button from "./Button";
 
 export default function Hero() {
   return (
@@ -34,16 +35,15 @@ export default function Hero() {
           have very real consequences.
         </p>
         <div className="mt-6">
-          <a
+           <a
             href="#contact"
             className="inline-block px-6 py-3 border text-sm font-medium uppercase tracking-wider hover:bg-[#e0c27d] hover:text-black transition"
           >
             Get In Touch
-          </a>
+          </a> 
+        
         </div>
       </div>
-
-      
     </main>
   );
 }
