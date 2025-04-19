@@ -22,7 +22,7 @@ const Services = () => {
             }, {
               title: 'POI Identification',
               icon: <TargetIcon className="h-6 w-6 mr-2" />,
-              image: '/poi-id-card.png',
+              image: '/POI-ID-card.png',
               description: 'We identify anonymous threat actors using advanced OSINT, AI, and behavioral profiling. Our specialists track digital breadcrumbs, link aliases, and compile actionable attribution reports—complete with metadata, visual IDs, and escalation readiness for legal or law enforcement handoff.',
               link: '/services/poi-identification'
             }].map((service, idx) => (
