@@ -17,10 +17,10 @@ const About = () => {
 
       {/* Foreground Content */}
       <div className="relative max-w-4xl mx-auto text-center z-10 py-10">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#fff2d4]">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)">
           Our Mission
         </h2>
-        <p className="text-[#fff2d4] text-base md:text-2xl">
+        <p className="text-white text-base md:text-2xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)">
         We exist to protect the digital and physical integrity of high-profile individuals, organizations, and properties. With a background in executive protection, cybersecurity, and OSINT operations, we offer a holistic approach to modern threat mitigation.
 
         In today’s evolving threat landscape, our services act as digital executive protection agents, identifying and neutralizing online threats before they reach the real world. We monitor, trace, and attribute malicious digital activity — from threatening emails and social media posts to cyberstalking and doxxing — working alongside our physical security teams to create a seamless shield of protection around those we serve. </p>

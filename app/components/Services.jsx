@@ -19,7 +19,7 @@ const Services = () => {
               link: "/services/threat-intelligence",
             },
             {
-              title: "Cyber & Physical Consulting",
+              title: "Consulting",
               icon: <ShieldCheckIcon className="h-6 w-6 mr-2" />,
               image: "/cyber-physical-card2.png",
               description:
@@ -37,25 +37,28 @@ const Services = () => {
           ].map((service, idx) => (
             <div
               key={idx}
-              className="bg-[#0f0f0f] p-6 border border-[#2c2c2c] rounded-xl shadow-md flex flex-col items-center text-center h-full max-w-md mx-auto drop-shadow-[0_0_10px_#1C9DA1]"
+              className="bg-[rgb(15,15,15)] p-6 border border-[#2c2c2c] rounded-lg shadow-lg flex flex-col items-center text-center h-full max-w-md mx-auto drop-shadow-[0_0_10px_#1C9DA1] opacity-95"
             >
-              <div className="flex items-center justify-center mb-4">
-                {service.icon}
-                <span className="text-lg font-semibold">{service.title}</span>
-              </div>
+           
               <img
                 src={service.image}
                 alt={service.title}
                 className="w-full h-56 object-cover rounded-md mb-4"
               />
-              <p className="text-sm text-[#fff2d4] flex-grow">
+                 <div className="flex items-center justify-center mb-4">
+                <span className="text-lg font-semibold uppercase mt-4">{service.title}</span>
+              </div>
+              <p className="text-md text-[#fff2d4] flex-grow">
                 {service.description}
               </p>
               <a
                 href={service.link}
                 className="mt-6 inline-block w-full px-6 py-3 border border-[#e0c27d] text-[#e0c27d] text-sm font-semibold uppercase hover:bg-[#e0c27d] hover:text-black transition duration-200"
               >
-                Learn More
+                 <div className="flex items-center justify-center ">
+                {service.icon}
+                <span className="text-lg font-semibold">Learn More</span>
+              </div>
               </a>
             </div>
           ))}

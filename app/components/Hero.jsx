@@ -3,7 +3,7 @@ import Button from "./Button";
 
 export default function Hero() {
   return (
-    <main className="relative flex flex-col md:flex-row items-center justify-center px-6 py-16 gap-8 text-center md:text-left bg-gradient-to-br from-[#1a1a1a] via-[#2c2c2c] to-[#413a29] overflow-hidden">
+    <main className="relative flex flex-col md:flex-row items-center justify-center px-6 py-16 gap-8 text-center md:text-left bg-gradient-to-br from-[#1a1a1a] via-[#2c2c2c] to-[#413a29] overflow-hidden h-screen">
       {/* Background Circuit Image */}
       <img
         src="/circuits.png"
@@ -26,7 +26,7 @@ export default function Hero() {
         <h1 className="text-4xl md:text-5xl lg:md:text-5xl xl:text-7xl font-bold mb-6 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
           Predict the Digital. Protect the Physical.
         </h1>
-        <p className="text-[#fff2d4] text-base md:text-lg max-w-xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+        <p className="text-[#fff2d4] text-base md:text-2xl max-w-xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
           At Aegis Research Group, we specialize in threat intelligence that
           bridges the cyber and physical domains. From analyzing malicious
           digital activity to assessing real-world vulnerabilities, we identify
