@@ -8,7 +8,6 @@ const Services = () => {
       style={{ backgroundImage: "url('/headline-bg.png')" }}
     >
       <div className="max-w-6xl mx-auto text-center">
-     
         <div className="grid md:grid-cols-3 gap-8">
           {[
             {
@@ -33,9 +32,8 @@ const Services = () => {
               image: "/poi-id-card2.png",
               description:
                 "We identify anonymous threat actors using advanced OSINT, AI, and behavioral profiling. Our specialists track digital breadcrumbs, link aliases, and compile actionable attribution reports—complete with metadata, visual IDs, and escalation readiness for legal or law enforcement handoff.",
-              link: "/services/poi-identification",
+              link: "/what-we-do/poi-identification",
             },
-            
           ].map((service, idx) => (
             <div
               key={idx}
