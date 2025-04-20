@@ -37,7 +37,7 @@ const Services = () => {
           ].map((service, idx) => (
             <div
               key={idx}
-              className="bg-[#1b1b1b] p-6 border border-[#2c2c2c] rounded-xl shadow-md flex flex-col items-center text-center h-full max-w-md mx-auto drop-shadow-[0_0_10px_#1C9DA1]"
+              className="bg-[#0f0f0f] p-6 border border-[#2c2c2c] rounded-xl shadow-md flex flex-col items-center text-center h-full max-w-md mx-auto drop-shadow-[0_0_10px_#1C9DA1]"
             >
               <div className="flex items-center justify-center mb-4">
                 {service.icon}

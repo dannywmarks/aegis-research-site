@@ -11,13 +11,13 @@ export default function Hero() {
         className="absolute bottom-0 right-0 w-[120%] md:w-1/2 max-w-none opacity-20 pointer-events-none z-0 transform scale-150 md:scale-100"
       />
       {/* Left: Logo */}
-      <div className="w-full md:w-1/2 flex justify-center relative z-10">
+      <div className="w-full md:w-1/2 flex justify-center relative z-10 ">
         <Image
           src="/logo-gold-light.png"
           alt="Aegis Shield Lion Logo"
           width={820}
           height={20}
-          priority
+          priority 
         />
       </div>
 
