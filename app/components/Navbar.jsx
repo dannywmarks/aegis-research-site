@@ -20,7 +20,7 @@ const Navbar = () => {
       <div className="md:hidden flex items-center gap-4">
         <button
           onClick={() => setDarkMode(!darkMode)}
-          className="p-2 text-[#c9b178] hover:text-[#fff2d4 border border-gold rounded"
+          className="p-2 text-[#c9b178] hover:text-[#fff2d4] border border-gold rounded"
         >
           {darkMode ? <Sun size={18} /> : <Moon size={18} />}
         </button>
