@@ -13,6 +13,10 @@ html.dark {
   color: #fff;
 }
 
+body {
+  @apply bg-gradient-to-br from-[#1a1a1a] via-[#111010] to-[#413a29] text-white min-h-screen;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -50,4 +54,5 @@ body {
 #59C3C3
 #62BBC1
 #A9BCD0
+#b8d7ea
 */
