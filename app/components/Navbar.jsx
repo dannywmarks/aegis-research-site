@@ -4,9 +4,11 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image"
 import Link from "next/link";
 import { Sun, Moon, Menu, X } from "lucide-react";
+import clsx from "clsx";
 const Navbar = () => {
   const [darkMode, setDarkMode] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [hasScrolled, setHasScrolled] = useState(false);
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", darkMode);
@@ -14,15 +16,30 @@ const Navbar = () => {
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setHasScrolled(window.scrollY > 32);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="fixed top-0 left-0 z-50 w-full py-10 transition-all duration-500 max-lg:py-4">
+    <header  className={clsx(
+      "fixed top-0 left-0 z-50 w-full py-10 transition-all duration-500 max-lg:py-4",
+      hasScrolled && "py-2 bg-black-100 backdrop-blur-[8px]"
+    )}>
       <nav className="w-full px-6 md:px-8 flex justify-between items-center relative z-50">
 
-        <div className="text-[#b8d7ea] font-serif  font-bold flex items-center">
-        {/* <Link className="flex-1 cursor-pointer z-2" href="/">
-          <Image src="/lion_logo_gold.png" width={55} height={35} alt="logo" />
+        <div className="text-[#b8d7ea] font-serif  font-bold flex items-center opacity-20">
+        <Link className="flex-1 cursor-pointer z-2" href="/">
+          <Image src="/ARG-logo-gold.png" width={115} height={35} alt="logo" />
         </Link>
-          <h1 className="mx-1 text-5xl">ARG</h1> */}
+          {/* <h1 className="mx-1 text-5xl">ARG</h1> */}
         </div>
 
         <div className="md:hidden flex items-center gap-4">

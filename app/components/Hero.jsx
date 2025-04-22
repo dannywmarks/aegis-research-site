@@ -28,13 +28,8 @@ export default function Hero() {
           <h1 className="text-4xl md:text-5xl xl:text-7xl font-bold mb-6 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             Predict the Digital. Protect the Physical.
           </h1>
-          <p className="text-[#fff2d4] text-base md:text-2xl max-w-xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            At Aegis Research Group, we specialize in threat intelligence that
-            bridges the cyber and physical domains. From analyzing malicious
-            digital activity to assessing real-world vulnerabilities, we
-            identify risks others miss. Our research-driven approach empowers
-            organizations to make informed decisions in a landscape where
-            virtual threats can have very real consequences.
+          <p className="text-[#fff2d4] w-full  md:text-2xl max-w-xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+            At Aegis Research Group, we specialize in threat intelligence that bridges the cyber and physical domains. From analyzing malicious digital activity to assessing real-world vulnerabilities, we identify risks others miss. Our research-driven approach empowers organizations to make informed decisions in a landscape where virtual threats can have very real consequences.
           </p>
           <div className="mt-6">
             <a
