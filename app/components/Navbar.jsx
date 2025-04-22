@@ -32,7 +32,7 @@ const Navbar = () => {
           >
             {darkMode ? <Sun size={18} /> : <Moon size={18} />}
           </button>
-          <button onClick={toggleMenu} className="text-gold">
+          <button onClick={toggleMenu} className="text-[#c9b178]">
             {menuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
