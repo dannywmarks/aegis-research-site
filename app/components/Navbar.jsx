@@ -37,7 +37,7 @@ const Navbar = () => {
 
         <div className="text-[#b8d7ea] font-serif  font-bold flex items-center opacity-20">
         <Link className="flex-1 cursor-pointer z-2" href="/">
-          <Image src="/ARG-logo-gold.png" width={115} height={35} alt="logo" />
+          <Image src="/ARG-logo-gold.png" width={85} height={35} alt="logo" />
         </Link>
           {/* <h1 className="mx-1 text-5xl">ARG</h1> */}
         </div>
