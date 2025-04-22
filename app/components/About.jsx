@@ -11,7 +11,7 @@ const About = () => {
         <img
           src="/our_mission_bg.png"
           alt="Digital Protection Agents"
-          className="w-full h-full object-cover opacity-100"
+          className="w-full h-full object-fit opacity-100"
         />
       </div>
 

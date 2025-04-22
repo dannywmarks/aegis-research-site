@@ -11,7 +11,7 @@ export default function Hero() {
         className="absolute inset-0 w-full h-full object-cover opacity-10 pointer-events-none z-0"
       />
 
-      <main className="flex flex-col md:flex-row items-center justify-center py-10 lg:gap-12 text-center md:text-left z-10 max-w-8xl mx-auto min-h-[100vh]">
+      <main className="flex flex-col md:flex-row items-center justify-center py-10 lg:gap-12 text-center md:text-left z-10 max-w-8xl mx-auto min-h-[100vh] mt-12">
         {/* Left: Logo */}
         <div className="w-full md:w-1/2 flex justify-center">
           <Image
