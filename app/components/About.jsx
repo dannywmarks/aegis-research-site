@@ -4,10 +4,10 @@ const About = () => {
   return (
     <section
       id="about"
-      className="relative py-16 px-6 md:px-12 bg-[#0f0f0f] overflow-hidden drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] min-h-[500px] md:min-h-[600px]"
+      className="relative py-16 px-6 md:px-12 bg-[#0f0f0f] overflow-hidden drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] min-h-[600px] md:min-h-[800px]"
     >
       {/* Background Image with opacity */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 opacity-50">
         <img
           src="/our_mission_bg.png"
           alt="Digital Protection Agents"

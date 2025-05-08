@@ -4,6 +4,64 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
+  --color-bg-dark: #1a1a1a;
+  --color-bg-mid: #111010;
+  --color-bg-light: #413a29;
+  --color-gold: #c9b178;
+  --color-light-gold: #fff2d4;
+  --color-cta-hover: #e0c27d;
+  --font-body: 'Open Sans', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg-dark);
+  color: white;
+  @apply bg-gradient-to-br from-[#1a1a1a] via-[#111010] to-[#413a29] text-white min-h-screen;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+.section {
+  padding: 4rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-highlight {
+  color: var(--color-light-gold);
+}
+
+.btn-primary {
+  background: none;
+  border: 1px solid var(--color-gold);
+  color: var(--color-gold);
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+  transition: background 0.3s, color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-cta-hover);
+  color: black;
+}
+
+img.bg-circuit {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.1;
+  z-index: 0;
+  pointer-events: none;
+}
+
+
+:root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -13,9 +71,7 @@ html.dark {
   color: #fff;
 }
 
-body {
-  @apply bg-gradient-to-br from-[#1a1a1a] via-[#111010] to-[#413a29] text-white min-h-screen;
-}
+
 
 @theme inline {
   --color-background: var(--background);
@@ -31,11 +87,7 @@ body {
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+
 
 
 

@@ -1,7 +1,7 @@
 // components/Navbar.jsx
 "use client";
 import React, { useState, useEffect } from "react";
-import Image from "next/image"
+import Image from "next/image";
 import Link from "next/link";
 import { Sun, Moon, Menu, X } from "lucide-react";
 import clsx from "clsx";
@@ -29,16 +29,22 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header  className={clsx(
-      "fixed top-0 left-0 z-50 w-full py-10 transition-all duration-500 max-lg:py-4",
-      hasScrolled && "py-2 bg-black-100 backdrop-blur-[8px]"
-    )}>
+    <header
+      className={clsx(
+        "fixed top-0 left-0 z-50 w-full py-10 transition-all duration-500 max-lg:py-4",
+        hasScrolled && "py-2 bg-black-100 backdrop-blur-[8px]"
+      )}
+    >
       <nav className="w-full px-6 md:px-8 flex justify-between items-center relative z-50">
-
         <div className="text-[#b8d7ea] font-serif  font-bold flex items-center opacity-20">
-        <Link className="flex-1 cursor-pointer z-2" href="/">
-          <Image src="/ARG-logo-gold.png" width={85} height={35} alt="logo" />
-        </Link>
+          <Link className="flex-1 cursor-pointer z-2" href="/">
+            <Image
+              src="/ARG-logo-gold.png"
+              width={125}
+              height={35}
+              alt="logo"
+            />
+          </Link>
           {/* <h1 className="mx-1 text-5xl">ARG</h1> */}
         </div>
 
@@ -68,29 +74,29 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            href="/who-we-are"
+            href="/about"
             className="text-[#c9b178] hover:text-[#fff2d4] transition drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] "
           >
             About
           </Link>
           <Link
-            href="/what-we-do"
+            href="/services"
             className="text-[#c9b178] hover:text-[#fff2d4] transition drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
           >
             Services
           </Link>
           <Link
-            href="/case-studies"
+            href="/risk-assessment"
             className="text-[#c9b178] hover:text-[#fff2d4] transition drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
           >
-            Case Studies
+            Risk assessment
           </Link>
-          <Link
+          {/* <Link
             href="/industries"
             className="text-[#c9b178] hover:text-[#fff2d4] transition drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
           >
             Industries
-          </Link>
+          </Link> */}
 
           <Link
             href="/contact"

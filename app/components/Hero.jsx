@@ -5,11 +5,11 @@ export default function Hero() {
   return (
     <section className="relative w-full overflow-hidden bg-gradient-to-br from-[#1a1a1a] via-[#111010] to-[#413a29]">
       {/* Fullscreen Background Circuit Image */}
-      <img
+      {/* <img
         src="/circuits.png"
         alt="Circuit board design"
         className="absolute inset-0 w-full h-full object-cover opacity-10 pointer-events-none z-0"
-      />
+      /> */}
 
       <main className="flex flex-col md:flex-row items-center justify-center py-10 lg:gap-12 text-center md:text-left z-10 max-w-8xl mx-auto min-h-[100vh] mt-12">
         {/* Left: Logo */}
@@ -38,6 +38,7 @@ export default function Hero() {
             >
               Get In Touch
             </a>
+            
           </div>
         </div>
       </main>
