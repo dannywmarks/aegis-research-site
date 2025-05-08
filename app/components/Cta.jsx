@@ -12,7 +12,7 @@ export default function CTA() {
         can support your mission.
       </p>
       <Link className="btn-primary inline-block" href="/contact">
-        Schedule Consultation
+        Schedule Consultation Now
       </Link>
     </section>
   );
