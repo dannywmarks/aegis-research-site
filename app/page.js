@@ -14,8 +14,6 @@ export default function Home() {
       <WhoWeAre />
       <VideoEmbed />
       <StatsSection />
-     
-
       <CTA />
  
     </div>
